@@ -1,0 +1,40 @@
+$container-width: 90vw;
+$grey: rgb(216, 216, 216);
+
+.user-container {
+  width: $container-width;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  .user-image {
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 20vw;
+  }
+  .user__details {
+    padding: 1rem;
+    .user__name {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.projects-container {
+  width: $container-width;
+  margin: auto;
+
+  .project {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1rem;
+    background-color: white;
+    border-bottom: 1px solid $grey;
+
+    .project__details {
+      .project__created-data {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
