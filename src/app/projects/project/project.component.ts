@@ -15,7 +15,7 @@ export class ProjectComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.data.subscribe((data) => {
-      this.projects = data.projects as Project[];
+      this.projects = data.projects;
     });
     this.user = this.projects.length > 0 ? this.projects[0].creator : null;
   }
